@@ -3,7 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - QDSUIBackplateGradient
+  - SamplesInfoPanel
+  - QDSUIToggleButton
+  - QDSUIToggleSwitch
+  - QDSUITooltip
+  - QDSUISharedThemeColor
+  - QDSUIAccentColor
+  - QDSUIBorderlessButton
+  - QDSUISecondaryButton
+  - QDSUIToggleBorderlessButton
+  - QDSUIIcon
+  - QDSUITextSecondaryColor
+  - QDSUISection
+  - QDSUITextInputField
+  - QDSUIPrimaryButton
+  - QDSUITextInvertedColor
+  - QDSUITextSecondaryInvertedColor
+  - QDSUIToggleCheckboxRadio
+  - QDSUIDestructiveButton
   layers:
   - Default
   - TransparentFX
@@ -11,7 +30,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Processing
   - 
   - 
   - 
