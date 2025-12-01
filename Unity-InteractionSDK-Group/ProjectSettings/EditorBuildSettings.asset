@@ -65,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Low-Poly Medieval Market/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 0
+    path: Assets/Scenes/NamanScene.unity
+    guid: 182667e6cb3328844a2191f9ce988fb1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d730f8000e2f1814291fdde8c7308752, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6f86a94401368ca409cdcb7fa64ac937, type: 2}
