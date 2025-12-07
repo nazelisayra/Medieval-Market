@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 769901378464052714}
   - component: {fileID: 5703664280403545119}
   - component: {fileID: 7258726327433647610}
-  - component: {fileID: 1784965804945045122}
+  - component: {fileID: 2852937854160924209}
   m_Layer: 0
   m_Name: DistanceGrabShield
   m_TagString: Untagged
@@ -169,7 +169,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 5703664280403545119}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!65 &1784965804945045122
+--- !u!65 &2852937854160924209
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,12 +184,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8236995, y: 0.87834597, z: 0.12816453}
-  m_Center: {x: -2.864001, y: 1.58128, z: 1.7529117}
+  m_Size: {x: 0.76011956, y: 0.7571217, z: 0.17381318}
+  m_Center: {x: 0.0020521882, y: 0.013230503, z: -0.026756454}
 --- !u!1 &5055034270972330328
 GameObject:
   m_ObjectHideFlags: 0
