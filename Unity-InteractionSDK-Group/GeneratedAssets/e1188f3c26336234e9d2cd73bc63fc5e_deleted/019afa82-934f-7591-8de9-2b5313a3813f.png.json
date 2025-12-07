@@ -1,0 +1,20 @@
+{
+    "asset": "e1188f3c26336234e9d2cd73bc63fc5e",
+    "fileName": "019afa82-934f-7591-8de9-2b5313a3813f.png",
+    "prompt": "Texture for a medieval woman baker in T-pose, suitable for 3D modeling.\n",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "cf73a3a4fd5f1dd17d0580890545c6ec",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

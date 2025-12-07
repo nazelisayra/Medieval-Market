@@ -1,0 +1,11 @@
+{
+    "asset": "3ae386ac6d3caff47b809f56fe0a567e",
+    "fileName": "019afaa3-72cc-7eec-a831-af442174c297.pose.json",
+    "prompt": "Animation for a medieval woman baker in T-pose, suitable for 3D modeling.",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 513807681,
+    "w3CTraceId": "28c3484aedde5d831a4deceaf4c1e0ec",
+    "isTrimmed": false
+}

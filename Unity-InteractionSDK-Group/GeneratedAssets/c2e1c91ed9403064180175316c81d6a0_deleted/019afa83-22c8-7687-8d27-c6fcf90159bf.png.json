@@ -1,0 +1,20 @@
+{
+    "asset": "c2e1c91ed9403064180175316c81d6a0",
+    "fileName": "019afa83-22c8-7687-8d27-c6fcf90159bf.png",
+    "prompt": "A medieval woman baker in T-pose, without any bread or props, designed for 3D modeling.",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "a5c28ad2ea16760f779bcaa6d1376f00",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
