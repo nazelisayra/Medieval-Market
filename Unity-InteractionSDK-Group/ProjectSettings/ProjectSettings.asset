@@ -53,6 +53,9 @@ PlayerSettings:
 =======
   unsupportedMSAAFallback: 0
   m_SpriteBatchMaxVertexCount: 65535
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_SpriteBatchVertexThreshold: 300
   m_MTRendering: 1
@@ -552,6 +555,9 @@ PlayerSettings:
       m_Height: 1024
       m_Kind: 4
       m_SubKind: App Store
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
