@@ -23,6 +23,7 @@ TagManager:
   - QDSUITextSecondaryInvertedColor
   - QDSUIToggleCheckboxRadio
   - QDSUIDestructiveButton
+  - Hammer
   layers:
   - Default
   - TransparentFX
