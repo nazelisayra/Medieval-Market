@@ -1,55 +1,78 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NPCController : MonoBehaviour
 {
-    private Animator npcAnimator;
+    [Header("ZORUNLU AYARLAR")]
+    public Transform playerCamera;   // CenterEyeAnchor buraya gelecek
+    public GameObject infoCardUI;    // UI Canvas buraya gelecek
+    public Animator npcAnimator;     // Karakter Animatoru buraya
 
-    [Header("UI Elements")]
-    public GameObject infoCardUI; // Inspector'dan atayacağımız UI Canvas
+    [Header("Mesafe Ayarı")]
+    public float detectionDistance = 3.0f; // Algilama mesafesi
 
     void Start()
     {
-        npcAnimator = GetComponent<Animator>();
-
-        // Oyun başladığında UI kartını gizle
-        if (infoCardUI != null)
+        // 1. KONTROL: UI Atanmis mi?
+        if (infoCardUI == null)
         {
-            infoCardUI.SetActive(false);
+            Debug.LogError("HATA: 'Info Card UI' kutusu bos! Lutfen UI objesini surukle.");
+        }
+        else
+        {
+            infoCardUI.SetActive(false); // Baslangicta kapat
+        }
+
+        // 2. KONTROL: Kamera Atanmis mi?
+        if (playerCamera == null)
+        {
+            Debug.LogError("HATA: 'Player Camera' kutusu bos! Lutfen CenterEyeAnchor'i surukle.");
+        }
+
+        // 3. KONTROL: Animator var mi?
+        if (npcAnimator == null)
+        {
+            npcAnimator = GetComponent<Animator>();
+            if (npcAnimator == null)
+                Debug.LogError("HATA: Karakterin uzerinde 'Animator' bileseni yok!");
         }
     }
 
-    // Oyuncu alana girdiğinde çalışır (Trigger Enter)
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        // Giren objenin etiketi "Player" mı?
-        if (other.CompareTag("Player"))
-        {
-            // Animasyonu konuşma moduna al
-            npcAnimator.SetBool("isTalking", true);
+        if (playerCamera == null) return; // Kamera yoksa calisma
 
-            // UI kartını göster
-            if (infoCardUI != null)
+        // Mesafeyi olcuyoruz
+        float distance = Vector3.Distance(transform.position, playerCamera.position);
+
+        // Mesafeyi surekli Console'a yazdiralim (Test bitince bu satiri silebilirsin)
+        // Debug.Log("Mesafe: " + distance); 
+
+        if (distance <= detectionDistance)
+        {
+            // Yakindayiz
+            if (!infoCardUI.activeSelf) // Eger UI zaten acik degilse ac
             {
+                Debug.Log("OYUNCU ALANA GIRDI - UI ACILIYOR");
                 infoCardUI.SetActive(true);
+                if (npcAnimator) npcAnimator.SetBool("isTalking", true);
+            }
+        }
+        else
+        {
+            // Uzaktayiz
+            if (infoCardUI != null && infoCardUI.activeSelf) // Eger UI aciksa kapat
+            {
+                Debug.Log("OYUNCU ALANDAN CIKTI - UI KAPANIYOR");
+                infoCardUI.SetActive(false);
+                if (npcAnimator) npcAnimator.SetBool("isTalking", false);
             }
         }
     }
 
-    // Oyuncu alandan çıktığında çalışır (Trigger Exit)
-    void OnTriggerExit(Collider other)
+    // Editor'de sari cember ciz
+    void OnDrawGizmos()
     {
-        if (other.CompareTag("Player"))
-        {
-            // Animasyonu bekleme moduna al
-            npcAnimator.SetBool("isTalking", false);
-
-            // UI kartını gizle
-            if (infoCardUI != null)
-            {
-                infoCardUI.SetActive(false);
-            }
-        }
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionDistance);
     }
 }
