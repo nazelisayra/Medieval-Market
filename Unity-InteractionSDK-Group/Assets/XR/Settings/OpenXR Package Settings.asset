@@ -44,8 +44,6 @@ MonoBehaviour:
   lateLatchingMode: 0
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
-  multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &-7911402051315238272
 MonoBehaviour:
@@ -112,11 +110,6 @@ MonoBehaviour:
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
-  m_optimizeMultiviewRenderRegions: 0
-  m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &-6858539473800294374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,11 +548,9 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 1258379303706075074}
   - {fileID: -874839084273871758}
   - {fileID: 6622618904544283710}
   - {fileID: 8039985417163985194}
-  - {fileID: -7685618965445156513}
   - {fileID: 8561847351996831482}
   - {fileID: 4363286598611756627}
   - {fileID: -5861794970925582960}
@@ -579,19 +570,14 @@ MonoBehaviour:
   - {fileID: -4705831566341840967}
   - {fileID: 3799248452159255052}
   m_renderMode: 1
-  m_latencyOptimization: 0
+  m_latencyOptimization: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
   m_depthSubmissionMode: 0
   m_spacewarpMotionVectorTextureFormat: 0
-  m_optimizeBufferDiscards: 0
+  m_optimizeBufferDiscards: 1
   m_symmetricProjection: 0
-  m_optimizeMultiviewRenderRegions: 0
-  m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &1258379303706075074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +598,6 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
-  m_UseRightHandedNDC: 0
 --- !u!114 &1275854555503680381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,7 +870,6 @@ MonoBehaviour:
   - {fileID: -3752465020643700493}
   - {fileID: 3503494022541747531}
   - {fileID: 6285777702274679537}
-  - {fileID: -6858539473800294374}
   - {fileID: -2011511203847201123}
   - {fileID: 5728803789525920866}
   - {fileID: 8676574444738893833}
@@ -914,11 +898,6 @@ MonoBehaviour:
   m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
-  m_optimizeMultiviewRenderRegions: 0
-  m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 1
-  m_foveatedRenderingApi: 0
-  m_useOpenXRPredictedTime: 0
 --- !u!114 &6062683991999847018
 MonoBehaviour:
   m_ObjectHideFlags: 0
