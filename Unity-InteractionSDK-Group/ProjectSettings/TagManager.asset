@@ -24,6 +24,7 @@ TagManager:
   - QDSUIToggleCheckboxRadio
   - QDSUIDestructiveButton
   - Hammer
+  - Coin
   layers:
   - Default
   - TransparentFX
