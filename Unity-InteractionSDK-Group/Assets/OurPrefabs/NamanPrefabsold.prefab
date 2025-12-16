@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7743083809274789364}
   m_Layer: 0
-  m_Name: NamanPrefabs
+  m_Name: NamanPrefabsold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
